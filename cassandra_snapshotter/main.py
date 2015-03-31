@@ -9,7 +9,7 @@ from utils import base_parser as _base_parser
 from utils import get_s3_connection_host
 
 
-env.use_ssh_config = True
+#env.use_ssh_config = True
 
 
 def run_backup(args):

@@ -26,7 +26,8 @@ def add_s3_arguments(arg_parser):
     adds common S3 argument to a parser
     '''
     arg_parser.add_argument('--aws-access-key-id',
-                        required=True,
+                        required=False,
+                        default=None,
                         help='public AWS access key.')
 
     arg_parser.add_argument('--s3-bucket-region',
@@ -38,7 +39,8 @@ def add_s3_arguments(arg_parser):
                             help='Enable AWS S3 server-side encryption')
 
     arg_parser.add_argument('--aws-secret-access-key',
-                        required=True,
+                        required=False,
+                        default=None,
                         help='S3 secret access key.')
 
     arg_parser.add_argument('--s3-bucket-name',
